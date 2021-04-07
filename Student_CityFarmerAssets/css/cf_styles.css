@@ -1,0 +1,70 @@
+
+/* Aiden Buxton */
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color: #B8D1EB ;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+h1{
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+}
+
+h2{
+	font-family: 'quicksandregular', cursive;
+	font-weight: normal;
+	font-style: italic;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+main ul{
+	list-style-image: url(../images/tomato.png);
+}
+
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+
+}
+
+main, footer {
+	 
+clear: both;
+}
+
+footer{
+	font-size: .75em;
+	text-align: center;
+	background-color: #997047;
+	padding: 10px 0px 0px 10px;
+}
