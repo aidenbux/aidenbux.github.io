@@ -1,0 +1,70 @@
+/* Style Sheet If You Build It (table), They Will Come */
+/* Name: Aiden Buxton 6/8/21                                       */
+
+/* Gradient target HTML body element tag */
+html{
+    background-image: linear-gradient(to right, rgb(95, 95, 235), rgb(56, 194, 63));
+}
+
+
+/* css target tableStyle class in HTML */
+.tableStyle{
+    border: 5px solid rgb(23, 41, 78);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    
+}
+
+th{
+    border: 1px solid black;
+    background-color: white;
+}
+td{
+    border:1px solid black;
+}
+/* css target HTML Table caption tag */
+caption{
+    color:white;
+    text-decoration: underline;
+    font-size: large;
+}
+
+
+/* css target HTML Table thead tag */
+thead{
+    border: 1px solid black;
+}
+ 
+ 
+/* css target HTML Table tfoot tag */
+tfoot{
+    border: 1px solid black;
+    background-color: white;
+}
+ 
+ 
+/* Add a pseudo-class selector (page 320) */
+/* For example --  :nth-child(even)       */
+
+tr:nth-child(odd){
+    background-color: rgb(204, 127, 255);
+}
+ 
+ 
+ 
+/* use colgroup */
+/* Week 3, Wednesday Video Lesson Chapter 8 folder - Table Column Group, page 173 */
+col.a{
+    background-color:rgb(74, 190, 190);
+    font-weight: bold;
+}
+col.b{
+    background-color:rgb(130, 219, 145);
+    font-weight: bold;
+}
+col.c{
+    background-color:rgb(127, 80, 255);
+    font-weight: bold;
+}
