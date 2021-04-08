@@ -1,8 +1,10 @@
 html{
-    background-image: url('../image/foggy2.JPG');
+    background-image: url("../image/foggy2.jpg");
     background-size: cover;
+    height: 700px;
+    width:100%;
     background-repeat: no-repeat;
-    background-color: black;
+    
 }
 
 header{
