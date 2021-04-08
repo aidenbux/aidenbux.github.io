@@ -1,0 +1,50 @@
+html{
+    background-image: url('../image/foggy2.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+header{
+    text-align: center;
+}
+
+.bun{
+    position: absolute;
+    top: 325px;
+    margin: auto;
+    left:0;
+    right: 0;
+    text-align: center;
+    width: 30%;
+    height: 55%;
+}
+
+@keyframes bunn {
+    
+    0% {top:325px;}
+    15% {top:45px;}
+    85% {top:45px;}
+    100% {top:325px;}
+
+    
+}
+
+
+
+.bun:hover{
+    animation-name: bunn;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+.fo{
+    position: absolute;
+    width:100%;
+    top:425px;
+    left:0;
+    right: 0;
+    z-index: 3;
+
+}
