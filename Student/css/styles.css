@@ -1,0 +1,66 @@
+
+/* Aiden Buxton 4/9/21 */
+
+@font-face {
+    font-family: 'glacial_indifferenceregular';
+    src: url('../fonts/glacialindifference-regular-webfont.woff2') format('woff2'),
+         url('../fonts/glacialindifference-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html{
+	background-image: url("../images/jewelry.jpg");
+	top: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	 
+#outerwrapper {	
+	width: 70%;
+	margin: auto;
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+}
+
+main{
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(#FFFFFF, #F0F9E6);
+}
+
+#addrightmargin{
+	float: left;
+	border-radius: 50%;
+	margin-right: 10%;
+}
+
+nav ul {
+	list-style-type: none;
+	font-size: 1.5em;
+	clear: left;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+
+h2{
+	font-family: glacial_indifferenceregular, 'Times New Roman', serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
+
+footer{
+	text-align: center;
+	padding: 10px;
+}
+
