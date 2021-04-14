@@ -1,0 +1,287 @@
+/* Aiden Buxton 6/9/21 */
+
+html{
+    background-image: url('../image/foggy2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+main {
+    min-width: 650px;
+	width: 90%;
+	max-width: 900px;
+	margin: auto auto auto auto;
+	background-color: #3a3a3ae3;
+
+	
+}
+/* GOOGLE FONT USED IN FOOTER & 'THEAD'*/
+
+/* WEBSAFE FONT USED IN <p>*/
+
+/* CUSTOM FONT USED IN h1 Nav*/
+@font-face {
+    font-family: 'berylium';
+    src: url('../font/berylium-webfont.woff2') format('woff2'),
+         url('../font/berylium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* NAV Section */
+
+label, input, textarea{
+    padding-right: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: #000000;
+    color:white;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    display: table;
+	float: none;
+    
+    
+	   
+}
+
+nav h1{
+    
+    font-family: 'berylium', Courier, monospace;
+}
+
+/* TABLE */
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+    width: 90%;
+}
+
+th {
+    border: 2px solid white;
+}
+
+td{
+    width:33.3%;
+}  
+td img{
+    width: 100%;
+}
+
+thead{
+    font-family: 'Source Code Pro', cursive, monospace; /* GOOGLE FONT */
+}
+
+tbody{
+    background-color: rgb(0, 0, 0);
+}
+
+tfoot{
+    font-size: .8em;
+    font-style: italic;
+}
+
+caption{
+    width:fit-content;
+    
+    margin-left: auto;
+    margin-right: auto;
+    caption-side: bottom;
+    padding-top: 10px;
+}
+
+#navtable th{
+    width: 25%;
+}
+
+
+/* Article Section || CSS BORDER STYLING USED HERE */
+
+article{
+    padding-left: 3%;
+    padding-right: 3%;   
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color:white;
+    
+}
+
+
+ /*WEBSAFE FONT USE the courier new*/
+article p{
+    font-weight:500;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.05em;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: 100px;
+    color:white;
+    padding-left: 3%;
+    padding-right: 3%;   
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: 'Source Code Pro', cursive, monospace;
+    font-size: .8em;
+        
+}
+footer #L{
+    float: left;
+}
+#iconBar{
+    width:33%;
+    float:right;
+    text-align: center;
+    gap: 2px;
+    
+}
+#iconBar th{
+    border: none;
+    
+}
+
+/* USE OF ID SELECTOR */
+#port{
+    
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    top: 10px;
+    width: 230px;
+    height: 230px;
+    
+}
+
+#cabin {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}
+
+/* USE OF CLASS SELECTOR */
+.bund{
+    width: 90%;
+    margin-left: -50%;
+}
+.bun{
+    position:absolute;
+    top: 77px;
+    
+    width: 107px;
+    height: 176px;
+    z-index: 1;
+    
+}
+/*.bun{
+    position: sticky;
+    top: 10px;
+    left:auto;
+    z-index: 1;
+}
+*/
+.bun2{
+    position: absolute;
+    top:77px;
+    width: 107px;
+    height: 176px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.bun2:hover{
+    opacity: 1;
+}
+
+.gridcontain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 60px 1fr 60px 1fr;
+    gap: 5px 10px;
+    grid-template-areas:
+      "title1 title1 title1 title1 title1"
+      "pic1 pic1 desc1 desc1 desc1"
+      "title2 title2 title2 title2 title2"
+      "desc2 desc2 desc2 pic2 pic2"
+      "title3 title3 title3 title3 title3"
+      "pic3 pic3 desc3 desc3 desc3";
+  }
+  
+  .title1 { grid-area: title1; }
+  
+  .pic1 { grid-area: pic1; }
+  .pic1 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25%;
+  }
+  
+  .desc1 { grid-area: desc1; font-size: larger;}
+  
+  .title2 { grid-area: title2; }
+  
+  .desc2 { grid-area: desc2; font-size: larger;}
+  
+  .pic2 { grid-area: pic2; }
+  .pic2 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25%;
+  }
+  
+  .title3 { grid-area: title3; }
+  
+  .pic3 { grid-area: pic3; }
+  .pic3 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25%;
+  }
+  
+  .desc3 { grid-area: desc3; font-size: larger;}
+  
+
+#logoS {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 30%;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Links */
+a:link {
+    color: white;
+}
+  
+  
+a:visited {
+    color: rgb(212, 154, 218);
+}
+
+a:active{
+    color:red;
+}
+
