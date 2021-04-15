@@ -260,7 +260,7 @@ footer #L{
   .desc3 { grid-area: desc3; font-size: larger;}
   
 
-#logoS {
+.logoS {
     height: 50px;
     width: 50px;
     background-color: white;
