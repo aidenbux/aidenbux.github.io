@@ -55,9 +55,10 @@ ul
 footer 
 { 
 	font-size: 75%;
-    font-style: bold;
+    	font-style: bold;
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', serif;
+	background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,255,0.3));
 }
 	   
 dt 
