@@ -69,6 +69,8 @@ img {
     border-radius: 20%;
     height: 100%;
     width: 100%;
+    max-height: 400px;
+    max-width: 400px;
 }
 
 h2{
