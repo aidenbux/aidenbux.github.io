@@ -1,0 +1,175 @@
+/* Aiden Buxton css styles page for portfolio 5/21 */
+/*custom font*/
+@font-face {
+    font-family: 'berylium';
+    src: url('../font/berylium-webfont.woff2') format('woff2'),
+         url('../font/berylium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    overflow-x: hidden;
+}
+
+article p, .descp{
+    font-weight:500;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.bg-image {
+    background-image: url("../image/jumbo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.formm {
+    padding-left: 3%;
+    padding-right: 3%;   
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color:white;
+}
+
+.panelaccord:hover {
+    background-color: gray;
+}
+
+.image-responsive {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+hr {
+    border: 1px solid;
+}
+nav h1, nav h3, h1{
+    font-family: 'berylium', Courier, monospace;
+}
+
+.ltod {
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(41, 43, 44));
+}
+
+.hero{
+    background-image: url("../image/jumbo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90px;
+    width: auto;
+}
+img {
+    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    font-size: medium;
+}
+h1{
+    font-size: x-large;
+}
+p, .lead{
+    font-size: small;
+}
+
+
+.port{
+    border-radius: 0;
+    height: 90px;
+    width: auto;
+    position: absolute;
+    top: 5px;
+}
+.nav-link{
+    font-size: large;
+}
+/*Links*/
+a{
+    color: white;
+}
+/*mobile*/
+.tablet {
+    display: none;
+}
+.mobile{
+    display: block;
+}
+.bun, .bun2, .whc {
+    display: none;
+}
+/* Port adjust */
+@media (min-width: 576px) {
+
+    .port {
+        height: 125px;
+        width: auto;
+        top: 5px;
+        left: 5%;
+    }
+}
+/*Tablet+*/
+@media (min-width: 992px) {  
+
+    .tablet {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .hero {
+        height: 190px;
+    }
+    .port {
+        height: 170px;
+        width: auto;
+        top: 20px;
+        left: 5%;
+    }
+    
+    
+    h2{
+        font-size: xx-large;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    p, .lead{
+        font-size: large;
+    }
+
+    article p{
+        font-weight:500;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
+    .bun, .bun2 {
+        display: block;
+        position: absolute;
+        width: 90px;
+        height: 150px;
+        right: 0;
+        bottom:5%;
+    }
+
+    /* Bunny Element*/
+    .bun {
+    z-index: 1;
+}
+    .bun2 {
+        z-index: 2;
+        opacity: 0;
+    }
+    .bun2:hover{
+        opacity: 1;
+    }
+    
+}
