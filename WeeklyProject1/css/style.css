@@ -1,0 +1,55 @@
+/* Aiden B ModLog
+Date Created: 8/25/21
+Version: 1
+Last Modified: 8/27/21
+Modified by: Aiden
+    8/26/21 created the basic template and first page of css.
+    8/27/21 created .barItem .whbg .pic touched nothing else
+    */
+
+.cour {
+    font-family: 'Source Code Pro', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+body {
+    background-image: url(../img/backgroundsky.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+#logo {
+    position: absolute;
+    max-height: 30%;
+    left: 0%;
+    top: 0%;
+    height: auto;
+    width: auto;
+}
+#sideNav {
+    height: 100%;
+    width: 6%;
+    position: fixed;
+    top: 0%;
+    left: 3%;
+    right: auto;
+    background-color: white;
+}
+.barItem {
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    max-width: 80%;
+    max-width: 500px;
+    
+}
+.pic {
+    height: 500px;
+    border: 4px solid white;
+}
+.whbg {
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
