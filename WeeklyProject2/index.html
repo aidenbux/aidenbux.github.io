@@ -30,10 +30,10 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!--Java-->
     <script src="/js/box.js"></script>
-	
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -70,7 +70,7 @@
   </div>
 
   <div class="themeDefault">
-    <h2><a href="#" id="changeClass1"><img src="img/box.png" id="barItem1" class="barItemClosed"> <i class="bi bi-box"></i> Buy your Box!</a></h2>
+    <h2><a href="#" onclick="changeClass1()"><img src="img/box.png" id="barItem1" class="barItemClosed"> <i class="bi bi-box"></i> Buy your Box!</a></h2>
     <div id="barDesc1" class="barDescClosed">
       <div class="row">
         <p class="col-6">For many things, jQuery is  easier to learn and use 
@@ -140,7 +140,7 @@
   </div>
 
   <div class="themeDefault">
-    <h2><a href="#" id="changeClass2"><img src="img/box.png" id="barItem2" class="barItemClosed"> <i class="bi bi-megaphone"></i> Recieve Updates</a></h2>
+    <h2><a href="#" onclick="changeClass2()"><img src="img/box.png" id="barItem2" class="barItemClosed"> <i class="bi bi-megaphone"></i> Recieve Updates</a></h2>
     <div id="barDesc2" class="barDescClosed">
       <p class="col-6">Recieve Regular updates on new Tower Goals, decoration items, and upcoming events.
       </p>
@@ -196,7 +196,7 @@
   </div>
 
   <div class="themeDefault">
-    <h2><a href="#" id="changeClass3"><img src="img/box.png" id="barItem3" class="barItemClosed"> <i class="bi bi-telephone"></i> Reach Out</a></h2>
+    <h2><a href="#" onclick="changeClass3()"><img src="img/box.png" id="barItem3" class="barItemClosed"> <i class="bi bi-telephone"></i> Reach Out</a></h2>
     <div id="barDesc3" class="barDescClosed">
       <p class="col-6">Submit a comment, bugs, ideas, or any questions you might have:
       </p>
@@ -216,15 +216,17 @@
             
             <div>
                 <label for="commentC">Comments:</label>
+                <br>
                 <textarea id="commentC" name="commentC" rows="4" cols="40">
-                <span>*</span>
+                </textarea><span>*</span>
             </div>
             
             <div>
                 <label>&nbsp;</label>
                 <input type="button" id="submitForm" value="Submit">
                 <input type="button" id="reset" value="Reset">
-            </div>     
+                
+              </div>     
             
         </form>
 
@@ -238,7 +240,7 @@
     
 
 </main>
-
+<script src="/js/box.js"></script>
 </body>
 
 </html>
