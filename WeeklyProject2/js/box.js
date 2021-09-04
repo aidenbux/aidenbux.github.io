@@ -20,26 +20,22 @@ function getInfo() {
 }
 
 //DROP DOWNS
-document.getElementById("changeClass1").addEventListener("click", changeClass1F);
-document.getElementById("changeClass2").addEventListener("click", changeClass2F);
-document.getElementById("changeClass3").addEventListener("click", changeClass3F);
 
-
-function changeClass1F() {
+function changeClass1() {
   var element = document.getElementById("barItem1");
   element.classList.toggle("barItemOpen");
   var element2 = document.getElementById("barDesc1");
   element2.classList.toggle("barDescOpen");
 }
 
-function changeClass2F() {
+function changeClass2() {
   var element = document.getElementById("barItem2");
   element.classList.toggle("barItemOpen");
   var element2 = document.getElementById("barDesc2");
   element2.classList.toggle("barDescOpen");
 }
 
-function changeClass3F() {
+function changeClass3() {
   var element = document.getElementById("barItem3");
   element.classList.toggle("barItemOpen");
   var element2 = document.getElementById("barDesc3");
@@ -100,46 +96,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     
-    $("#submitForm").addEventListener("click", () => {
-      const nameC = $("#nameC");
-      const emailC = $("#emailC");
-      const commentC = $("#commentC");
-      let isValid = true;
-  
-      if (nameC.value == "") { 
-          nameC.nextElementSibling.textContent = "Please enter name.";
-          isValid = false;
-      }
-  
-      if (emailC.value == "") { 
-          emailC.nextElementSibling.textContent = "Please enter email.";
-          isValid = false;
-      }
-  
-      if (commentC.value == "") {
-          commentC.nextElementSibling.textContent = "Please enter comments.";
-          isValid = false;
-      }
-  
-  
-      if (isValid) {
-          $("#contactForm").submit();
-          alert("Thank you for your feedback!")
-      }
-  });
-  
-  $("#reset").addEventListener("click", () => {
-      $("#nameC").value = "";
-      $("#emailC").value = "";
-      $("#commentC").value = "";
-  
-      $("#nameC").focus();
-  });
-  
-  $("#nameC").focus();
-  });
+$("#submitForm").addEventListener("click", () => {
+    const nameC = $("#nameC");
+    const emailC = $("#emailC");
+    const commentC = $("#commentC");
+    let isValid = true;
+
+    if (nameC.value == "") { 
+        nameC.nextElementSibling.textContent = "Please enter name.";
+        isValid = false;
+    }
+
+    if (emailC.value == "") { 
+        emailC.nextElementSibling.textContent = "Please enter email.";
+        isValid = false;
+    }
+
+    if (commentC.value == "") {
+        commentC.nextElementSibling.textContent = "Please enter comments.";
+        isValid = false;
+    }
 
 
+    if (isValid) {
+        $("#contactForm").submit();
+        alert("Thank you for your feedback!")
+    }
+});
 
+$("#reset").addEventListener("click", () => {
+    $("#nameC").value = "";
+    $("#emailC").value = "";
+    $("#commentC").value = "";
+
+    $("#nameC").focus();
+});
+
+$("#nameC").focus();
+
+});
 
 
