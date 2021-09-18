@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             email2.nextElementSibling.nextElementSibling.textContent = "Enter your Email again";
             isValid = false;
         } else {
-            email2.nextElementSibling.nextElementSibling.textContent = "Enter your Email";
+            email2.nextElementSibling.nextElementSibling.textContent = "";
         }
     
         if (email1.value != email2.value) { 
