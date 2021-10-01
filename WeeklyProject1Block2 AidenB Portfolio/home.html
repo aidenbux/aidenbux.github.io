@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!--
+    Mod Log
+    9/29/21
+    V.1
+    Aiden Buxton
+
+    9/29/21 - Started from scratch while importing select elements from portfolio to reduce clutter and outdated elements. added accordion after studying w3 schools.
+    9/30/21 - added p elements
+    10/01/21 - moved js to separate js folder and cleaned up code a bit.
+
+
+-->
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Aiden's portfolio website for CWI">
+        <meta name="keywords" content="Web Design, CWI, Aiden, Buxton">
+        <meta name="author" content="Aiden Buxton">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--GOOGLE FONT 'Source Code Pro'-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+        <!--END GOOGLE FONT-->
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Aiden's Portfolio: Home</title>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="home.html"><img src="img/port.png"></a>
+            <h1>Aiden's Portfolio</h1>
+            <hr>
+            <nav>
+                <li><a href="home.html"><h3>Home</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>
+                </a></li>
+                <li><h3>|</h3></li>                
+                <li><a href="gallery.html"><h3>Gallery</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                      </svg>
+                </a></li>
+                <li><h3>|</h3></li> 
+                <li><a href="contact.html"><h3>Contact</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                </a></li>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1>Make yourself at home!</h1>
+                <div>
+                    <img Id="cabin" src="../img/cabin.png" alt="Picture of a log cabin from https://www.pngegg.com/en/png-zkvaj">
+                <p>&emsp;&emsp;This is my portfolio site, a project of mine while attending <span style="font-weight: bold; text-decoration: underline;">CWI</span>. This website was made using HTML, CSS, and JS, and is currently hosted by Github.</p>
+                <p>&emsp;&emsp;For an outline of my experience with code and Software Development check out the drop down accordion below. I have other assignments as well as personal digital work showcased on the 'Gallery' page. Last, if you have any comments or would like to reach out to me, use the 'Contact' page.</p>
+                </div>
+                
+            </article>
+            
+
+            <button class="accordion"><h3>Html & Css</h3></button>
+<div class="panel">
+    <img src="img/htmlThumb.jpg" style="float:right;">
+    <p style="clear:left;">Over <span style="font-weight: bold;">2 years</span> creating and problem solving with html and css has taught me that there is always a solution and sometimes you need to think outside the box to figure that out.</p></div>
+</div>
+
+<button class="accordion"><h3>Blender</h3></button>
+<div class="panel">
+    <img src="img/blenderThumb.jpg" style="float:left;">
+    <p style="clear:right;">Multiple finished projects ranging from low poly to high detail sculptures and models including texture work and lighting.</p>
+</div>
+
+<button class="accordion"><h3>ChoiceScript</h3></button>
+<div class="panel">
+    <img src="img/choiceThumb.jpg" style="float:right;">
+    <p style="clear:left;"><a href="https://www.choiceofgames.com/make-your-own-games/choicescript-intro/" style="font-weight: bold;" target="blank">ChoiceScript</a> is a programing language designed for writing choice-based games similar to the classic Choose Your Own Adventure books. The simple tools can be stretched and used to build more complicated than expected functions such as randomized elements, procedural generation, and animated features.</p></div>
+</div>
+<!-- JS for Accordion-->
+<script src="/js/accord.js"></script>
+
+        </main>
+
+        <footer>
+    
+            <div id="L">
+            <p>Email me at: <a href="mailto:aidenbuxton@my.cwi.edu">aidenbuxton@my.cwi.edu</a></p>
+            <p>Or reach via phone: <a href="tel:(512)636-4809">(512)636-4809</a></p>
+            </div>
+        
+            
+        </footer>
+
+    </body>
+
+</html>
