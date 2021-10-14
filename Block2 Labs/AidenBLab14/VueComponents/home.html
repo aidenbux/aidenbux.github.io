@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/>
+    <title>Lab 13</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <tweet-component
+        v-for="tweet in tweets" :key="tweet.id" :tweet="tweet" @add="addTweetMessage($event)">
+      </tweet-component>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
