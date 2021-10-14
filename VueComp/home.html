@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+      <script src="https://unpkg.com/vue"></script>
+    </head>
+
+  <body>
+    
+    <div id="app">
+      <h1 class="subtitle">Chapter 14</h1>
+      <hr>
+      <p>Three different components.</p>
+      <counter-one></counter-one>
+      <counter-two></counter-two>
+      <counter-three></counter-three>
+    </div>
+    <script src="js/main.js"></script>
+    <div id="Ch15">
+    <div id="app2">
+      <h1 class="subtitle">Chapter 15</h1>
+      <hr>
+      <h2>Single-line-template</h2>
+      <br>
+      <single-line-template :message="message">
+      </single-line-template>
+      <br>
+    </div>
+    <script src="js/app2.js"></script>
+    <div id="app3">
+      <h2>Inline Templates</h2>
+      <inline-temp :message="message" inline-template>
+        <div class="card">
+        <header class="card-header card-header-title">
+         {{ message }}
+        </header>
+        </div>
+      </inline-temp>
+    </div>
+    <script src="js/app3.js"></script>
+    <br>
+    <div id="xTempApp">
+      <h2>X Templates</h2>
+      <x-temp :message="message"></x-temp>
+        <script type="text/x-template" id="x-template-component">
+          <div class="card">
+            <header class="card-header card-header-title">
+              {{ message }}
+            </header>
+          </div>
+        </script>
+    </div>
+    <script src="js/xTemplates.js"></script>
+    
+    </div>
+  </body>
+</html>
