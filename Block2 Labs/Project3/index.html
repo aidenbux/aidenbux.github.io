@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>In the Garden Aiden B Project 3</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!--Vue-->
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body onload="disableScroll()">
+  
+  <div id="page1">
+    <div :class="{ 'animate__animated': isActive2, 'animate__fadeOutUp': isActive2 }">
+      <div v-if="showName" class="section hero garden garden1">
+        <h1>Let's visit the Vue Garden</h1>
+        <br>
+        <button @click="toggleName" onclick="enableScroll()">ENTER</button>
+      </div>
+    </div>
+    <script src="components/page1.js"></script>
+  </div>
+
+  <div id="page2">
+    <div class="section garden">
+        <h1>Welcome, this is the first stop of the Vue Garden.</h1>
+        <div class="row">
+          <div class="one-half column">
+            <h4>Here we are growing a counter. Water them to see the number grow!</h4>
+          </div>
+          <div class="one-half column">
+            <a class="button" @click="changeCount"><h4>{{ count }}</h4></a>
+          </div>
+          <script src="components/page2.js"></script>
+        </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="page3">
+    <div class="section garden">
+        <h1>Welcome, this is the second stop of the Vue Garden.</h1>
+        <div class="row">
+            <h4>Planted here are some watchers, they'll convert Feet to Inches for us!</h4>
+
+            <div class="field">
+              <label class="label">Feet:</label>
+              <input v-model="ft" class="input" type="number" placeholder="Type a length in Feet!">
+            </div>
+            <div class="field">
+              <label class="label">Inches</label>
+              <input v-model="inch" class="input" type="number" placeholder="Type a length in Inches!">
+          </div>
+          <script src="components/page3.js"></script>
+        </div>
+      </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div id="page4">
+    <div class="section garden">
+      <h1>Welcome, this is the third stop of the Vue Garden.</h1>
+      <div class="row">
+          <h4>Here we have a fancy Computed mirror. Anything you type in the input box will be reflected in the mirror backwards!</h4>
+
+          <div class="field">
+            <label class="label">Enter your phrase:</label>
+            <input v-model="message" class="input" type="text" placeholder="Type a length in Feet!">
+            <p class="input" type="text">{{ reverseMessage }}</p>
+          </div>
+        <script src="components/page4.js"></script>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div id="page5">
+    <div class="section garden">
+      <h1>Welcome, this is the last stop of the Vue Garden.</h1>
+      <div class="row">
+          <h4>Here we have some lovely flowers. Click the '+' to add more flowers.</h4>
+
+          <plant-component
+          v-for="plant in plants" :key="plant.id" :plant="plant" @add="addPlant($event)">
+        </plant-component>
+        <script src="components/page5.js"></script>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="components/reset.js"></script>
+</body>
+</html>

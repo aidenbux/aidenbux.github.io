@@ -1,0 +1,58 @@
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+  }
+.section-heading, .section-description {
+    margin-bottom: 1.2rem;
+  }
+
+input {
+    text-align: center;
+}
+
+
+.garden1 {
+    height: 100vh;
+}
+.garden {
+    
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-top: 5vh;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+}
+.button {
+    width: 200px;
+    height: 200px;
+    padding-top: 70px;
+}
+
+#page1 {
+    background-image: linear-gradient(#ffffff00, #ffffff), url(../assets/pg1bg.png);
+    background-size: cover;
+}
+
+#page2 {
+    background-image: linear-gradient(#ffffff, #ffffff00), url(../assets/pg2bg.png);
+    background-size: cover;
+    height: 80vh;
+}
+
+#page3 {
+    background-image: url(../assets/pg3bg.png);
+    background-size: cover;
+    background-color: rgb(28, 13, 94);
+    height: 80vh;
+}
+
+#page4 {
+    background-image: url(../assets/pg4bg.png);
+    background-size: cover;
+    height: 80vh;
+}
